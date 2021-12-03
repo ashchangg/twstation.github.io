@@ -1,28 +1,55 @@
-.wrapper {
-	position: relative;
+body {
+	background-color: #D1C8B3;
+	margin: 0;
+	padding: 0;
+	height:100%;
+}
+
+.box {
+	position: absolute;
+	background-color: #F7EED9;
+	width: 100%;
+	height: 500px;
+	position: absolute;
+}
+
+.box-items {
+	position: absolute;
+	bottom: -5px;
 	display: flex;
-	flex-direction: column;
-	width: 1044px;
-	height: 900px;
+	flex-direction: row;
+	text-align: center;
+	gap: 100px;
+	justify-content: space-around;
 }
-.background {
-	position: absolute;
+
+#boarding {
+	height: 250px;
+	width: auto;
+	margin-left: 130px;
 }
-#info {
-	display: block;
-	position: absolute;
-	left: 200px;
-	bottom: 182px;
-	cursor: pointer;
-	border: 0;
+
+#boarding:hover {
+	transform: scale(1.05);
+	transform-origin : 50% 100%; 
 }
-.top {
-	background: #eeeeee;
-	width: 2129px;
-	height: 718px;
+
+#ticketing {
+	height: 250px;
+	width: auto;
 }
-.bottom {
-	background: #EFE6D5;
-	width: 2129px;
-	height: 182px;
+
+#ticketing:hover {
+	transform: scale(1.05);
+	transform-origin : 50% 100%; 
+}
+
+#store {
+	height: 250px;
+	width: auto;
+}
+
+#store:hover {
+	transform: scale(1.05);
+	transform-origin : 50% 100%; 
 }

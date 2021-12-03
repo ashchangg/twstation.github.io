@@ -1,55 +1,226 @@
+@import url('@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap');');
+
 body {
-	background-color: #D1C8B3;
+	background-color: rgb(83, 76, 89);
 	margin: 0;
 	padding: 0;
 	height:100%;
 }
 
+/** index */
 .box {
 	position: absolute;
-	background-color: #F7EED9;
-	width: 100%;
-	height: 500px;
+	background-image: linear-gradient(blue, purple);
+	width: 2800px;
+	height: 550px;
 	position: absolute;
 }
 
 .box-items {
 	position: absolute;
-	bottom: -5px;
 	display: flex;
 	flex-direction: row;
 	text-align: center;
-	gap: 100px;
+	gap: 250px;
 	justify-content: space-around;
+	align-items: flex-end;
 }
 
-#boarding {
-	height: 250px;
+
+#welcome {
+	height: 200px;
 	width: auto;
-	margin-left: 130px;
+	margin-left: 150px;
 }
 
-#boarding:hover {
+#welcome:hover {
 	transform: scale(1.05);
 	transform-origin : 50% 100%; 
 }
 
-#ticketing {
+#tp101 {
+	height: 550px;
+	width: auto;
+}
+
+#tp101:hover {
+	transform: scale(1.05);
+	transform-origin : 50% 100%; 
+}
+
+#raohe {
+	height: 300px;
+	width: auto;
+}
+
+#raohe:hover {
+	transform: scale(1.05);
+	transform-origin : 50% 100%; 
+}
+
+#yehliu {
 	height: 250px;
 	width: auto;
 }
 
-#ticketing:hover {
+#yehliu:hover {
 	transform: scale(1.05);
 	transform-origin : 50% 100%; 
 }
 
 #store {
-	height: 250px;
+	height: 280px;
 	width: auto;
 }
 
 #store:hover {
 	transform: scale(1.05);
 	transform-origin : 50% 100%; 
+}
+
+/** explore pages */
+.music {
+	position: absolute;
+	background-color: rgb(83, 76, 89);
+	width: 100%;
+	height: 100%;
+	position: absolute;
+}
+
+.music-items {
+	position: absolute;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+}
+
+#music-text {
+	font-family: Lato;
+	font-size: 20px;
+	color: white;
+	text-align: center;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+.music-button {
+	margin-top: 50px;
+	margin-bottom: 200px;
+	height: 50px;
+	width: auto;
+	display: block;
+	margin: auto;
+}
+
+.music-button:hover {
+	animation-name: bounce;
+    animation-duration: 0.5s;
+    animation-timing-function: cubic-bezier(0.42, 0, 0.7, 0.5);
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+	animation-direction: alternate;
+	cursor: pointer;
+}
+
+iframe {
+	display: block;
+	width: 500px;
+	display: block;
+	margin: auto;
+}
+
+@keyframes bounce {
+    from {
+        transform: translateY(0px);
+    }
+    to {
+        transform: translateY(20px);
+    }
+}
+
+/**carousel**/
+.carousel {
+	width: 750px;
+	height: 422px;
+	background-color: rgb(83, 76, 89);
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	overflow:hidden;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+.car-container {
+	width: 2250px;
+	height: 422px;
+	clear:both;
+	position: relative;
+	-webkit-transition: left 1.8s;
+	-moz-transition: left 1.8s;
+	-o-transition: left 1.8s;
+	transition: left 1.8s;
+}
+
+.slide {
+	float:left;
+	margin: 0px;
+	padding: 0px;
+	position:relative;
+}
+
+#img-1:target ~ .car-container {
+	left: 0px;
+}
+
+#img-2:target ~ .car-container {
+	left: -750px;
+}
+
+#img-3:target ~ .car-container {
+	left: -1500px;
+}
+
+.buttons {
+	position: relative;
+	top: -40px;
+}
+
+.buttons a {
+	display: inline-block;
+	height: 15px;
+	width: 15px;
+	border-radius: 50%;
+	background-color: white;
+}
+
+.buttons a:hover {
+	background-color: #9B8989;
+}
+
+#welc_text {
+	font-family: Lato;
+	font-size: 80px;
+	color: white;
+	text-align: center;
+	margin-top: 100px;
+	margin-bottom: 100px;
+}
+
+#back_button {
+	font-family: Lato;
+	font-size: 20px;
+	color: rgb(83, 76, 89);
+	text-align: center;
+	height: 30px;
+	width: 55px;
+	background-color: rgb(238, 227, 227);
+	display: block;
+	margin: auto;
+	border-radius: 10%;
+	text-decoration: none;
+	text-decoration-color: rgb(238, 227, 227);
+	margin-top: 20px;
 }
